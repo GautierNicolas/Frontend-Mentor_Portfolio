@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "SpaceGrotesk";
+    src: url(../fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "SpaceGrotesk";
+
+    padding: 3.125rem 6.25rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 7rem;
+}
+
+nav > h1 {
+    font-size: 2rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    
+}
+
+.nav-list > li {
+    margin-left: 20px;
+}
+
+/***** Top Wrapper *****/
+
+.top_wrapper {
+    display: flex;
+    border-bottom: 3px solid #242424;
+
+}
+
+.top-text_wrapper {
+    width: 60%;
+}
+
+.top-text_wrapper > img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.top-text_wrapper > h2 {
+    font-size: 5.125rem;
+    font-weight: bold;
+
+    margin-bottom: 3rem;
+}
+
+.top-text_wrapper > p {
+    width: 48%;
+    margin-bottom: 3rem;
+}
+
+.top-text_wrapper > a {
+    text-decoration: none;
+    color: white;
+}
+
+.underline_green {
+    border-bottom: 5px solid #4EE1A0;
+}
+
+.top-img-profile {
+    position: relative;
+    transform: translateY(-30%);
+    z-index: -2;
+
+    width: 27.8125rem;
+    height: 45rem;
+}
+
+.top-img-circle {
+    position: absolute;
+    
+    transform: translate(-50%, 200%);
+}
+
+/***** End Top Wrapper *****/
+
+
+
+

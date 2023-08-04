@@ -9,7 +9,7 @@ body {
     font-family: "SpaceGrotesk";
     overflow-x: hidden;
 
-    padding: 3.125rem 10rem;
+    padding-top: 2rem;
 }
 
 nav {
@@ -33,6 +33,14 @@ nav > h1 {
 .nav-list > li {
     margin-right: 1.875rem;
 }
+.nav-list > li > a {
+    z-index: 10;
+    width: 50px;
+    height: 100%;
+}
+
+
+
 
 /***** Top Wrapper *****/
 
@@ -180,18 +188,42 @@ a {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
     display: none;
 }
+
+
 
 .img-article_wrapper:hover .img-overlay_wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color:  rgba(0, 0, 0, 0.5);
+    animation: background-fade-in 0.3s ease-in-out;
+}
+
+@keyframes background-fade-in {
+    0% {
+        background-color:  rgba(0, 0, 0, 0);
+    }
+    100% {
+        background-color:  rgba(0, 0, 0, 0.5);
+    }
 }
 
 .img-overlay_wrapper > a {
     margin-bottom: 3.125rem;
 }
 /***** End Projects wrapper *****/
+
+
+/***** Footer *****/
+
+footer {
+    background-color: #979797;
+}
+footer {
+    background-color: #979797;
+}
+
+/***** End Footer *****/

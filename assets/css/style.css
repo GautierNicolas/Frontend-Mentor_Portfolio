@@ -263,6 +263,14 @@ a {
 /* .contact-text_wrapper > p {
 } */
 
+/* descative la border par défaut */
+input:focus {
+    outline:  none;
+}
+
+textarea:focus {
+    outline: none;
+}
 .contactForm {
     position: relative;
 }
@@ -280,6 +288,28 @@ a {
     height: 150px;
 }
 
+.display_name{
+    display: none;
+}
+
+.verif_wrapper {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: end;
+}
+
+.verif-text {
+    position: absolute;
+    font-size: 0.8rem;
+    color: #FF6F5B;
+}
+
+.verif-img {
+    position: absolute;
+    transform: translateY(-250%);  
+}
+
 .send_btn {
     position: absolute;
     right: 0;
@@ -287,7 +317,7 @@ a {
     border: none;
     color: #979797;
 
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 
     letter-spacing: 3px;
     padding-bottom: 15px;
@@ -299,13 +329,6 @@ a {
     color: #4EE1A0;
 }
 
-.verif-name {
-    display: none;
-}
-
-.verif-email {
-    display: none;
-}
 
 /***** End CONTACT *****/
 
@@ -317,8 +340,5 @@ footer {
     background-color: #242424;
     padding: 5rem 0;
 }
-
-
-
 
 /***** End Footer *****/

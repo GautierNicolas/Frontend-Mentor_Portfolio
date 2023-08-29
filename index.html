@@ -165,7 +165,7 @@
                 </article>
             </div>
         </section>
-       <section class='contact-background'>
+        <section class='contact-background'>
             <div class="contact_wrapper container">
                 <div class="contact-text_wrapper">
                     <h3>Contact</h3>
@@ -174,15 +174,25 @@
                 </div>
                 <div>
                     <form class="contactForm" name="contactForm">
-                        <input class='field-input' placeholder="NAME" type="text" id="name" name="name" onChange={handleNameChange} required /><br/>
-                        <p class="verif-name">name fields not empty</p>
-
-                        <input class='field-input' placeholder="EMAIL" type="email" id="email" name="email" onChange={handleEmailChange} required /><br/>
-                        <p class="verif-email">format is not valide</p>
                         
-                        <textarea class='field-input' placeholder="MESSAGE" id="message" name="message" onChange={handleMessageChange} required ></textarea><br/>
-                
-                        <input class="send_btn" type="submit" value="SEND MESSAGE" onClick={handleClick} />
+                        <input class='field-input' placeholder="NAME" type="text" id="name" name="name" required /><br/>
+                        <div id="name_wrapper" class="verif_wrapper">
+                            <p class="verif-text display_name">Sorry, the name field must be long than 3 characters</p>
+                            <img class="verif-img display_name" src="./assets/images/exclamationMark.svg" alt="">
+                        </div>                            
+
+                        <input class='field-input' placeholder="EMAIL" type="email" id="email" name="email" required /><br/>
+                        <div id="email_wrapper" class="verif_wrapper">
+                            <p class="verif-text display_name">Sorry, the format is not valid</p>
+                            <img class="verif-img display_name" src="./assets/images/exclamationMark.svg" alt="">
+                        </div> 
+                        
+                        <textarea class='field-input' placeholder="MESSAGE" id="message" name="message" required ></textarea><br/>
+                        <div id="message_wrapper" class="verif_wrapper">
+                            <p class="verif-text display_name">Sorry, the message field must be long than 250 characters</p>
+                            <img class="verif-img display_name" src="./assets/images/exclamationMark.svg" alt="">
+                        </div> 
+                        <input class="send_btn" type="submit" value="SEND MESSAGE"/>
                     </form>
                 </div>
 

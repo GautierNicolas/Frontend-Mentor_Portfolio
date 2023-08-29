@@ -12,6 +12,8 @@ body {
     padding-top: 2rem;
 }
 
+/***** HEADER *****/
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -38,6 +40,11 @@ nav > h1 {
     width: 50px;
     height: 100%;
 }
+
+.imgSvg {
+    filter: none;    
+}
+/***** End HEADER *****/
 
 
 

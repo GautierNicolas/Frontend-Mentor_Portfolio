@@ -15,10 +15,7 @@ for(i = 0; i < svg.length; i++) {
     })
 }
 
-// END SVG
-
 // Contact Form
-
 function updateInputAndDisplay(inputElement, displayElements, isValid) {
     const validColor = "var(--color-hover)";
     const invalidColor = "var(--color-wrong)";

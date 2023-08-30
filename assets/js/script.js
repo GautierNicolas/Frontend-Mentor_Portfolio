@@ -20,8 +20,8 @@ for(i = 0; i < svg.length; i++) {
 // Contact Form
 
 function updateInputAndDisplay(inputElement, displayElements, isValid) {
-    const validColor = "#4EE1A0";
-    const invalidColor = "#FF6F5B";
+    const validColor = "var(--color-hover)";
+    const invalidColor = "var(--color-wrong)";
 
     const inputIsValid = isValid(inputElement.value);
     inputElement.style.borderBottom = inputIsValid ? `2px solid ${validColor}` : `2px solid ${invalidColor}`;

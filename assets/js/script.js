@@ -17,7 +17,7 @@ for(i = 0; i < svg.length; i++) {
 
 // Contact Form
 function updateInputAndDisplay(inputElement, displayElements, isValid) {
-    const validColor = "var(--color-hover)";
+    const validColor = "var(--color-valid-hover)";
     const invalidColor = "var(--color-wrong)";
 
     const inputIsValid = isValid(inputElement.value);

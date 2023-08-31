@@ -75,6 +75,7 @@ nav {
 nav > h1 {
     font-weight: var(--fontWeight-heading);
     font-size: 2rem;
+    letter-spacing: -0.0275rem;
     margin: 0;
 }
 
@@ -295,11 +296,11 @@ nav > h1 {
 }
 
 .contact_wrapper {
-    border-bottom: 2px solid var(--color-font-main);
     position: relative;
     display: flex;
     justify-content: space-between;
     height: 26.1875rem;
+    border-bottom: 2px solid var(--color-font-main);
 }
 
 .contact-text_wrapper {
@@ -321,14 +322,14 @@ nav > h1 {
 
 .contact-text_wrapper > img {
     position: absolute;
-    bottom: 10%;
-    left: -25%;
+    bottom: 8%;
+    left: -35%;
 }
 
 .contactForm {
     position: relative;
     width: 27.8125rem;
-    height: 20.375rem;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -367,6 +368,7 @@ textarea:focus {
     font-size: var(--fontSize-inputAlert);
     color: var(--color-wrong);
     position: absolute;
+    transform: translateY(-70%);
 }
 
 .verif-img {
@@ -375,18 +377,16 @@ textarea:focus {
 }
 
 .send_btn {
+    color: var(--color-font-main);
+    letter-spacing: 2.1.8125rem;
+    font-weight: var(--fontWeight-heading);
     position: absolute;
     right: 0;
     background: none;
     border: none;
-    color: var(--color-font-main);
-
-    margin-top: 1.5rem;
-
-    letter-spacing: 3px;
-    padding-bottom: 15px;
+    margin-top: 1.875rem;
     border-bottom: 2px solid var(--color-valid-hover);
-    text-align: end;
+    padding-bottom: 15px;
 }
 
 .send_btn:hover {
@@ -401,11 +401,18 @@ textarea:focus {
 /***** Footer *****/
 
 footer {
-    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     transform: translateX(-10.625rem);
     background-color: var(--color-background-contact);
-    padding: 5rem 10.625rem 0;
-    
+    padding: 2.9375rem 10.625rem 6.25rem;    
+}
+
+footer > h2 {
+    font-size: 2rem;
+    letter-spacing: -0.0275rem;
+    margin: 0;
 }
 
 /***** End Footer *****/

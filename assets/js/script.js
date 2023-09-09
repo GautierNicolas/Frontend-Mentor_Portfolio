@@ -1,7 +1,7 @@
 
 // SVG
 
-const svg = document.getElementsByClassName('svgObject');
+const svg = document.getElementsByClassName('nav-link');
 for(i = 0; i < svg.length; i++) {
     svg[i].addEventListener('mouseover', function(event){
         const svgDoc = event.target;
@@ -33,7 +33,7 @@ function updateInputAndDisplay(inputElement, displayElements, isValid) {
 }
 
 const nameInput = document.getElementById('name');
-const nameWrapper = document.getElementById('name_wrapper');
+const nameWrapper = document.getElementById('verification-name-field');
 const nameDisplay = nameWrapper.querySelectorAll('.display_name');
 
 nameInput.addEventListener("input", () => {
@@ -41,7 +41,7 @@ nameInput.addEventListener("input", () => {
 });
 
 const emailInput = document.getElementById('email');
-const emailWrapper = document.getElementById('email_wrapper');
+const emailWrapper = document.getElementById('verification-email-field');
 const emailDisplay = emailWrapper.querySelectorAll('.display_name');
 
 emailInput.addEventListener("input", () => {
@@ -50,11 +50,11 @@ emailInput.addEventListener("input", () => {
 });
 
 const messageInput = document.getElementById('message');
-const messageWrapper = document.getElementById('message_wrapper');
+const messageWrapper = document.getElementById('verification-message-field');
 const messageDisplay = messageWrapper.querySelectorAll('.display_name');
 
 messageInput.addEventListener("input", () => {
-    updateInputAndDisplay(messageInput, messageDisplay, value => value.length >= 250)
+    updateInputAndDisplay(messageInput, messageDisplay, value => value.length >= 50)
 });
 
 // END contact form

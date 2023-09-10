@@ -128,7 +128,7 @@ a {
     letter-spacing: var(--letterSpacing-Body);
     color: var(--color-font-main);
     width: 60%;
-    margin-bottom: 3rem;
+    margin: 0 0 3rem;
 }
 
 .intro-pattern {
@@ -302,7 +302,6 @@ a {
     position: relative;
     display: flex;
     justify-content: space-between;
-    height: 26.1875rem;
     border-bottom: 2px solid var(--color-font-main);
 }
 
@@ -324,7 +323,7 @@ a {
     width: 80%;
 }
 
-.contact-text > img {
+.contact-circle-img {
     position: absolute;
     bottom: 8%;
     left: -35%;
@@ -438,7 +437,7 @@ footer {
 
 @media (max-width: 768px) {
     body {    
-        padding: 1.875rem; 
+        padding: 1.875rem 1.875rem 0; 
     }
     /***** Header *****/    
     .nav-list > li {
@@ -474,22 +473,25 @@ footer {
 
     .intro-description {
         width: 450px;
+        margin-bottom: 2rem;
     }
 
     .intro-images {
         position: absolute;
         top: 0;
         right: 0;
-        width: 350px;
+        width: 322px;
         height: 600px;    
     }
-
+    
     .intro-circle-img {
         position: absolute;    
-        transform: translate(-50%, 400%);
+        transform: translate(200%, 365%);
     }
-
+    
     .intro-profile-img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
     }
     
@@ -507,24 +509,25 @@ footer {
         padding-bottom: 0;
     }
 
-    .article_wrapper > article {
+    .project-article {
         display: flex;
         flex-direction: column;
+        margin-bottom: 8rem;
     }
 
-    .img-overlay_wrapper {  
+    .image-hover-overlay {  
         display: flex; 
         margin-top: 110%;
         height: auto;
         width: auto;
     }
     
-    .img-overlay_wrapper > a {
+    .image-hover-overlay > a {
         background-color: var(--color-background);
         margin: 0 2rem 0 0;
     }
     
-    .img-article_wrapper:hover .img-overlay_wrapper {
+    .img-project-article:hover .image-hover-overlay {
         display: block;
         background-color: var(--color-background);    
         animation: none;
@@ -535,14 +538,14 @@ footer {
     /***** Contact *****/
     .contact-section {
         transform: translateX(-1.875rem);
-        padding: 5.25rem 1.875rem 0;
+        padding: 0 1.875rem 0;
     }
 
     .contact-container {
         flex-wrap: wrap;
         justify-content: center;
         height: auto;
-        padding-bottom: 10rem;
+        padding-bottom: 7rem;
     }
 
     .contact-text {
@@ -566,16 +569,20 @@ footer {
 
     .send-btn {
         position: relative;
-        transform: translateX(270%);
+        transform: translateX(200%);
     }
 
+    .contact-circle-img {
+        bottom: 5%;
+        left: -55%;
+    }
     
     /***** End Contact *****/
 
     /***** Footer *****/
     footer {
         transform: translateX(-1.875rem);
-        padding: 2.9375rem 1.875rem 6.25rem;    
+        padding: 2.9375rem 1.875rem;    
     }
     
     /***** End Footer *****/

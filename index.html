@@ -45,15 +45,19 @@
             </nav>
         </header>
         <section class="intro-section">
+            <div class="intro-images">
+                <picture>
+                    <source media="(max-width: 480px)" srcset="./assets/images/image-profile-mobile.webp">
+                    <source media="(max-width: 768px)" srcset="./assets/images/image-profile-tablet.webp">
+                    <img class="intro-profile-img" src="./assets/images/image-profile-desktop.webp" alt="img-profile">
+                </picture>
+                <img class="intro-circle-img" src="./assets/images/pattern-circle.svg" alt="pattern-circle">
+            </div>
             <div class="intro-text">
                 <img  class="intro-pattern" src="./assets/images/pattern-rings.svg" alt="pattern-rings">
                 <h2><span class="tablet-text">Nice to</span></span> meet you! I'm <span class="highlighted-text">Adam Keyes</span>.</h2>
                 <p class="intro-description">Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</p>
                 <a class="btn-green" href="">CONTACT ME</a>
-            </div>
-            <div class="intro-images">
-                <img class="intro-circle-img" src="./assets/images/pattern-circle.svg" alt="pattern-circle">
-                <img class="intro-profile-img" src="./assets/images/image-profile-desktop.webp" alt="img-profile">
             </div>
         </section>
         <section class="skills-section">
@@ -81,8 +85,8 @@
                 <h3 class="skill-title">Sass</h3>
                 <p class="skill-experience">3 Years Experience</p>
             </div>
-            <img src="./assets/images/pattern-rings.svg" alt="pattern-rings">
         </section>
+        <img class="skills-circle-img" src="./assets/images/pattern-rings.svg" alt="pattern-rings">
         <section class="projects-section">
             <div class="project-header">
                 <h2 class="project-title">Projects</h2>

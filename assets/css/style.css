@@ -436,10 +436,23 @@ footer .nav-item {
 
 /***** End Footer *****/
 
-/* Media queries 768px*/
+/* Media Queries */
 
-@media (max-width: 768px) {
-    body {    
+@media (max-width: 1400px) {
+    .intro-text > h2 {
+        font-size: 72px;
+        letter-spacing: -2.05px;
+    }
+
+    .skills-section {
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 3rem;
+        border-bottom: 1px solid #FFFFFF;
+    }
+}
+
+@media (max-width: 1024px) {
+    body {
         padding: 3% 4% 0; 
     }
     /***** Header *****/    
@@ -500,9 +513,6 @@ footer .nav-item {
     /***** End Intro *****/
 
     /***** Skills *****/
-    .skills-section {
-        grid-template-columns: 1fr 1fr;
-    }
     
     .skills-section :nth-child(-n+2) {
         padding-top: 0;

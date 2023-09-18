@@ -22,11 +22,6 @@ Lien: https://gautiernicolas.github.io/Frontend-Mentor_Portfolio/
 - CSS
 - JavaScript
 
-## Captures d'écran
-
-![Capture d'écran du Portfolio](./assets/images/screenshot-tablet.png)
-![Capture d'écran du Portfolio](./assets/images/screenshot-mobile.png)
-
 ## Comment Exécuter le Projet
 
 1. Cloner le dépôt.

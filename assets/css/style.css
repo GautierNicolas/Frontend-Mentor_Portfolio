@@ -450,6 +450,11 @@ footer .nav-item {
         border-bottom: 1px solid #FFFFFF;
     }
 }
+@media (min-width: 1500px) {
+    .intro-section {
+        padding-bottom: 30%;
+    }
+}
 
 @media (max-width: 1024px) {
     body {
@@ -592,11 +597,6 @@ footer .nav-item {
     .contact-form {
         width: 60%;
     }
-
-    /* .send-btn {
-        position: relative;
-        transform: translateX(190%);
-    } */
 
     .contact-circle-img {
         bottom: 5%;
